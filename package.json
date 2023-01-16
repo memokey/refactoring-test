@@ -1,0 +1,22 @@
+{
+  "name": "refactoring-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memokey/refactoring-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memokey/refactoring-test/issues"
+  },
+  "homepage": "https://github.com/memokey/refactoring-test#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
