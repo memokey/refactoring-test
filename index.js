@@ -13,11 +13,11 @@ exports.deterministicPartitionKey = (event) => {
     if (candidate.length <= MAX_PARTITION_KEY_LENGTH) {
       return candidate;
     }
-  } else  {
+  } else {
     candidate = JSON.stringify(event);
   }
 
   candidate = crypto.createHash("sha3-512").update(candidate).digest("hex");
-
+  
   return candidate;
 };
