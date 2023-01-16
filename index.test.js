@@ -1,13 +1,13 @@
 const source = require('./index.js');
 
 describe("deterministicPartitionKey Function Test", () => {
-  test("testin case if event value is null", () => {
+  test("test in case if event value is null", () => {
     const event = null;
     expectedValue = "0";
     expect(source.deterministicPartitionKey(event)).toBe(expectedValue);
   })
 
-  test("tes\in case if event value is {}", () => {
+  test("test in case if event value is {}", () => {
     const event = {};
     expectedValue = "c1802e6b9670927ebfddb7f67b3824642237361f07db35526c42c555ffd2dbe74156c366e1550ef8c0508a6cc796409a7194a59bba4d300a6182b483d315a862";
     expect(source.deterministicPartitionKey(event)).toBe(expectedValue);
